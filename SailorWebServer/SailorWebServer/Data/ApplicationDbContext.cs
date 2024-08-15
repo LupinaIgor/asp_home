@@ -13,4 +13,10 @@ public class ApplicationDbContext : IdentityDbContext
     }
     
     public DbSet<Friend> Friends { get; set; }
+    
+    public DbSet<TagModel> Tags { get; set; }
+    
+    public DbSet<CategoryModel> Categories { get; set; }
+    
+    public DbSet<PostModel> Posts { get; set; }
 }
