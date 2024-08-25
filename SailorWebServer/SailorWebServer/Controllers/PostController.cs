@@ -52,8 +52,10 @@ namespace SailorWebServer.Controllers
         // GET: Post/Create
         public IActionResult Create()
         {
-            ViewData["CategoryId"] = new SelectList(_context.Categories, "Id", "Name");
-            ViewData["Tags"] = new MultiSelectList(_context.Tags, "Id", "Name");
+            ViewData["CategoryId"] 
+                = new SelectList(_context.Categories, "Id", "Name");
+            ViewData["Tags"] 
+                = new MultiSelectList(_context.Tags, "Id", "Name");
             return View();
         }
 
@@ -63,7 +65,9 @@ namespace SailorWebServer.Controllers
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> 
-            Create([Bind("Id,Title,Body,Slug,CategoryId,Tags")] PostModel postModel, int[] Tags)
+            Create([Bind("Id,Title,Body,Slug,CategoryId")]
+                PostModel postModel, 
+                int[] Tags)
         {
             //Загрузить теги из базы данных по их Id
             if (Tags != null)

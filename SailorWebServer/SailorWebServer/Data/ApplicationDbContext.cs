@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using SailorWebServer.Models.Entities;
+using SailorWebServer.Models.Entities.Geo;
 
 namespace SailorWebServer.Data;
 
@@ -11,6 +12,13 @@ public class ApplicationDbContext : IdentityDbContext
         : base(options)
     {
     }
+    public DbSet<AreaModel> Areas { get; set; }
+    
+    public DbSet<CityModel> Cities { get; set; }
+    
+    public DbSet<CityTypeModel> CityTypes { get; set; }
+    
+    public DbSet<StreetModel> Streets { get; set; }
     
     public DbSet<Friend> Friends { get; set; }
     

@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SailorWebServer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f34e09699228860ee5361d4bc8bd24eca8dbeb43")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6cfa5e40a245364b26824d45c4c3b7b544a8f0d6")]
 [assembly: System.Reflection.AssemblyProductAttribute("SailorWebServer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SailorWebServer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
